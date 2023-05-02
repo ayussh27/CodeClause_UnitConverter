@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit Converter Express Version</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Unit Converter Express Version</h1>
+	</header>
+	<main>
+		<div class="unit-types">
+			<div class="unit-type length">
+				<h2 style="text-align: center"> Length</h2>
+				<div class="conversion-form">
+					<label for="length-from">From:</label>
+					<input type="number" id="length-from">
+					<select id="length-from-unit">
+						<option value="meters">Meters</option>
+						<option value="centimeters">Centimeters</option>
+						<option value="feet">Feet</option>
+						<option value="inches">Inches</option>
+						<option value="kilometers">Kilometers</option>
+						<option value="miles">Miles</option>
+						<option value="yards">Yards</option>
+					</select>
+					<label for="length-to">To:</label>
+					<input type="number" id="length-to" disabled>
+					<select id="length-to-unit">
+						<option value="meters">Meters</option>
+						<option value="centimeters">Centimeters</option>
+						<option value="feet">Feet</option>
+						<option value="inches">Inches</option>
+						<option value="kilometers">Kilometers</option>
+						<option value="miles">Miles</option>
+						<option value="yards">Yards</option>
+					</select>
+					<button id="length-convert">Convert</button>
+				</div>
+			</div>
+			<div class="unit-type temperature">
+				<h2 style="text-align: center">Temperature</h2>
+				<div class="conversion-form">
+					<label for="temp-from">From:</label>
+					<input type="number" id="temp-from">
+					<select id="temp-from-unit">
+						<option value="celsius">Celsius</option>
+						<option value="fahrenheit">Fahrenheit</option>
+						<option value="kelvin">Kelvin</option>
+					</select>
+					<label for="temp-to">To:</label>
+					<input type="number" id="temp-to" disabled>
+					<select id="temp-to-unit">
+						<option value="celsius">Celsius</option>
+						<option value="fahrenheit">Fahrenheit</option>
+						<option value="kelvin">Kelvin</option>
+					</select>
+					<button id="temp-convert">Convert</button>
+				</div>
+			</div>
+			<div class="unit-type area">
+				<h2 style="text-align: center">Area</h2>
+				<div class="conversion-form">
+					<label for="area-from">From:</label>
+					<input type="number" id="area-from">
+					<select id="area-from-unit">
+						<option value="square-meters">Square Meters</option>
+						<option value="square-kilometers">Square Kilometers</option>
+						<option value="square-miles">Square Miles</option>
+						<option value="acres">Acres</option>
+						<option value="hectares">Hectares</option>
+                    </select>
+					<label for="area-to">To:</label>
+					<input type="number" id="area-to" disabled>
+					<select id="area-to-unit">
+						<option value="square-meters">Square Meters</option>
+						<option value="square-kilometers">Square Kilometers</option>
+						<option value="square-miles">Square Miles</option>
+						<option value="acres">Acres</option>
+						<option value="hectares">Hectares</option>
+					</select>
+					<button id="area-convert">Convert</button>
+				</div>
+			</div>
+			<div class="unit-type volume">
+				<h2 style="text-align: center">Volume</h2>
+				<div class="conversion-form">
+					<label for="volume-from">From:</label>
+					<input type="number" id="volume-from">
+					<select id="volume-from-unit">
+						<option value="cubic-meters">Cubic Meters</option>
+						<option value="liters">Liters</option>
+						<option value="gallons">Gallons</option>
+						<option value="cubic-feet">Cubic Feet</option>
+						<option value="cubic-inches">Cubic Inches</option>
+					</select>
+					<label for="volume-to">To:</label>
+					<input type="number" id="volume-to" disabled>
+					<select id="volume-to-unit">
+						<option value="cubic-meters">Cubic Meters</option>
+						<option value="liters">Liters</option>
+						<option value="gallons">Gallons</option>
+						<option value="cubic-feet">Cubic Feet</option>
+						<option value="cubic-inches">Cubic Inches</option>
+					</select>
+					<button id="volume-convert">Convert</button>
+				</div>
+			</div>
+			<div class="unit-type weight">
+				<h2 style="text-align: center">Weight</h2>
+				<div class="conversion-form">
+					<label for="weight-from">From:</label>
+					<input type="number" id="weight-from">
+					<select id="weight-from-unit">
+						<option value="kilograms">Kilograms</option>
+						<option value="grams">Grams</option>
+						<option value="pounds">Pounds</option>
+						<option value="ounces">Ounces</option>
+					</select>
+					<label for="weight-to">To:</label>
+					<input type="number" id="weight-to" disabled>
+					<select id="weight-to-unit">
+						<option value="kilograms">Kilograms</option>
+						<option value="grams">Grams</option>
+						<option value="pounds">Pounds</option>
+						<option value="ounces">Ounces</option>
+					</select>
+					<button id="weight-convert">Convert</button>
+				</div>
+			</div>
+			<div class="unit-type time">
+				<h2 style="text-align: center">Time</h2>
+				<div class="conversion-form">
+					<label for="time-from">From:</label>
+					<input type="number" id="time-from">
+					<select id="time-from-unit">
+						<option value="seconds">Seconds</option>
+						<option value="minutes">Minutes</option>
+						<option value="hours">Hours</option>
+						<option value="days">Days</option>
+					</select>
+					<label for="time-to">To:</label>
+                    <input type="number" id="time-to" disabled>
+                    <select id="time-to-unit">
+                    <option value="seconds">Seconds</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                    <option value="days">Days</option>
+                    </select>
+                    <button id="time-convert">Convert</button>
+                    </div>
+                    </div>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="converter.js"></script>
+                    </body>
+                    </html>

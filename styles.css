@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #223344;
+  color: #fff;
+  padding: 22px;
+  text-align: center;
+}
+/* Set the background color of the page */
+body {
+  background-color: #f7e2a6ba;
+}
+
+/* Set the background color of the content area */
+.container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the main content area */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Styling for the input fields and labels */
+label {
+  display: block;
+  
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 8px;
+  width: 150px;
+}
+
+/* Styling for the unit select dropdowns */
+select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 8px;
+  width: 150px;
+}
+
+/* Styling for the button */
+button {
+  background-color: #223344;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* Styling for the conversion result field */
+#conversion-result {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Styling for the page footer */
+footer {
+  background-color: #223344;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
